@@ -1,0 +1,25 @@
+{
+  "distance_mode": "norm",
+  "encoders": {
+    "mel": {
+      "invariance_supported": false,
+      "invariance_auc": 0.9730416666666667,
+      "mean_preserving_distance": 3.2126568697150657,
+      "mean_other_distance": 9.755942056502054,
+      "cross_segment_mean": 9.755942056502054,
+      "collapse_healthy": true,
+      "effective_rank": 41.93967223821303,
+      "participation_ratio": 3.5021399501083805
+    },
+    "handcrafted": {
+      "invariance_supported": false,
+      "invariance_auc": 0.9986666666666667,
+      "mean_preserving_distance": 0.514964304276358,
+      "mean_other_distance": 2.257429268746162,
+      "cross_segment_mean": 2.257429268746162,
+      "collapse_healthy": true,
+      "effective_rank": 5.488229199969502,
+      "participation_ratio": 4.121377693793355
+    }
+  }
+}
