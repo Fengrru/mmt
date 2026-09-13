@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mmt"
+version = "0.0.1"
+description = "Preregistered protocol and open framework for testing whether musical motion is a continuous perceptual trajectory."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "soundfile",
+    "librosa",
+    "torch",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "tqdm",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+ssl = ["transformers", "datasets"]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/Fengrru/mmt"
+Repository = "https://github.com/Fengrru/mmt"
+Issues = "https://github.com/Fengrru/mmt/issues"
+
+[tool.setuptools.packages.find]
+include = ["phase1*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]

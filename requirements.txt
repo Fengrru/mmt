@@ -1,0 +1,19 @@
+# Tested on Python 3.14.6. Lower bounds are the versions used in the pilot;
+# see requirements-lock.txt for the exact tested set.
+
+numpy>=2.0
+scipy>=1.11
+soundfile>=0.12
+librosa>=1.0
+torch>=2.2
+pandas>=2.1
+scikit-learn>=1.4
+matplotlib>=3.8
+tqdm>=4.66
+PyYAML>=6.0
+pytest>=8.0
+
+# Optional (self-supervised baselines: MERT / CLAP)
+# transformers>=4.40
+# datasets>=2.18
+# einops>=0.7

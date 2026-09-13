@@ -1,0 +1,47 @@
+domain: solo_piano
+
+segmentation:
+  durations: [0.5, 1.0, 2.0, 4.0, 8.0]
+  hop_ratio: 0.5
+  target_sr: 22050
+  min_rms_db: -50.0
+  max_segments_per_source: 200
+
+transforms:
+  candidates:
+    - pitch_shift
+    - gain
+    - brightness
+    - time_stretch
+
+ontology:
+  # transformations are only used as positives/negatives after validation
+  min_raters: 5
+  min_trials: 10
+  min_alpha: 0.2
+  rating_midpoint: 4.0
+  rating_margin: 0.5
+  scale: 7
+
+distance:
+  primary: norm      # raw | norm | dtw
+  norm_len: 64
+  normalized_features: true
+
+prediction:
+  horizon_k: 4
+  epochs: 30
+  encoder: transformer
+  out_dim: 64
+
+encoders:
+  - handcrafted
+  - mel
+  - mert
+  - clap
+
+success_criteria:
+  require_validated_ontology: true
+  require_invariance_auc_above: 0.5
+  require_collapse_healthy: true
+  require_prediction_beats_baseline: true

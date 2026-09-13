@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+artifacts/
+*.wav
+*.flac
+*.mp3
+*.ogg
+!tests/**/*.wav
+.env
+
+# logs and OS noise
+*.log
+.DS_Store
+Thumbs.db
+
+# archives
+*.zip
+
+# environment-specific pilot paths
+datasets/*/audio_root.txt
+
+# manuscript kept private for now (local only)
+paper/

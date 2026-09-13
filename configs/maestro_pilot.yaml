@@ -1,0 +1,52 @@
+# Pilot: prove the closed loop, not the final statistics.
+# 20-50 segments, 5-10 raters. Do not scale the dataset until the protocol is stable.
+domain: solo_piano
+pilot: true
+
+paths:
+  subset_metadata: datasets/maestro_subset/metadata.csv
+  subset_audio_root: datasets/maestro_subset
+  stimuli_dir: artifacts/maestro_pilot/stimuli
+  study_dir: artifacts/maestro_pilot/study
+  results_dir: artifacts/maestro_pilot/results
+
+segmentation:
+  durations: [1.0, 2.0, 4.0]
+  hop_ratio: 0.5
+  target_sr: 22050
+  min_rms_db: -50.0
+  max_segments_per_source: 4      # ~4 windows per excerpt, keep the pilot small
+
+transforms:
+  # parameterized: each (transform, value) gets its own ontology entry
+  grid:
+    pitch_shift: [2.0, -3.0]
+    gain: [6.0, -6.0]
+    brightness: [9.0, -9.0]
+    time_stretch: [0.8, 0.9, 1.1, 1.25]   # search for a perceptual boundary alpha*
+
+ontology:
+  scale: 7
+  midpoint: 4.0
+  margin: 0.5
+  min_raters: 5
+  max_raters: 10
+  min_trials: 10
+  min_alpha: 0.2
+
+distance:
+  primary: norm
+  norm_len: 64
+  normalized_features: true
+
+prediction:
+  horizon_k: 4
+  epochs: 30
+
+encoders: [handcrafted, mel, mert, clap]
+
+success_criteria:
+  require_validated_ontology: true
+  require_invariance_auc_above: 0.5
+  require_collapse_healthy: true
+  require_prediction_beats_baseline: true

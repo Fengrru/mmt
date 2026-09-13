@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this framework or pilot, please cite it as below."
+title: "Testing the Continuous Perceptual Trajectory Hypothesis for Musical Motion: A Preregistered Protocol and Open Framework"
+type: software
+authors:
+  - family-names: "Feng"
+    given-names: "Yuhan"
+    email: "fengru@gmail.com"
+abstract: >-
+  A preregistered protocol, framework, and open-source pilot for testing whether
+  musical motion can be represented as a continuous latent perceptual trajectory.
+  Transformation semantics are established by human ratings at the
+  (transform, parameter) level before any representation is evaluated.
+license: MIT
+repository-code: "https://github.com/Fengrru/mmt"
+url: "https://github.com/Fengrru/mmt"
+version: "0.0.1"
+date-released: "2026-09-13"
+keywords:
+  - music information retrieval
+  - representation learning
+  - self-supervised learning
+  - perceptual similarity
+  - preregistration
