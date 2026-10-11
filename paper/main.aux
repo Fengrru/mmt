@@ -1,0 +1,117 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{godoy2010gestures,meyer1956emotion}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}\protected@file@percent }
+\citation{li2024mert}
+\citation{won2024musicfm}
+\citation{elizalde2023clap,wu2023laionclap}
+\citation{wu2023clamp}
+\citation{saeed2021cola}
+\citation{niizumi2021byola}
+\citation{bardes2022vicreg}
+\citation{assran2023ijepa}
+\citation{bardes2024vjepa}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}The trajectory hypothesis}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Contributions}{2}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Related work}{2}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Music and audio representation learning.}{2}{section*.1}\protected@file@percent }
+\citation{godoy2010gestures,meyer1956emotion}
+\@writefile{toc}{\contentsline {paragraph}{Invariance-based audio SSL.}{3}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Predictive representation learning.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Gesture and perception.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Scope and non-goals}{3}{subsection.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Setup and notation}{3}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Audio and segmentation}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Gesture as a trajectory segment}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Transformations and realization}{3}{subsection.2.3}\protected@file@percent }
+\citation{sakoe1978dtw}
+\citation{kriegeskorte2008rsa}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Distance on variable-length trajectories}{4}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Model geometry and RSA}{4}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}The identification problem}{4}{section.3}\protected@file@percent }
+\newlabel{sec:identification}{{3}{4}{The identification problem}{section.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{T1: transformation semantics are assumed, not measured.}{4}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{T2: variable-length trajectories.}{4}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{T3: collapse.}{4}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{T4: trivial prediction.}{4}{section*.8}\protected@file@percent }
+\citation{efron1993bootstrap}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Threats to validity and their mitigations.}}{5}{table.1}\protected@file@percent }
+\newlabel{tab:threats}{{1}{5}{Threats to validity and their mitigations}{table.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{T5: unfair baselines.}{5}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{T6: construct ambiguity.}{5}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Why a conjunction}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:conjunction}{{3.1}{5}{Why a conjunction}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Framework}{5}{section.4}\protected@file@percent }
+\newlabel{sec:framework}{{4}{5}{Framework}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Segmentation}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Parameterized transformations}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Human ontology validation}{5}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:ontology}{{4.3}{5}{Human ontology validation}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Task.}{5}{section*.11}\protected@file@percent }
+\citation{krippendorff2004content}
+\citation{fleiss1971measuring}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Parameterized transforms. A transform with disagreeing settings is labeled \texttt  {mixed}.}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:transforms}{{2}{6}{Parameterized transforms. A transform with disagreeing settings is labeled \texttt {mixed}}{table.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Acoustic motion descriptors for one anchor and two of its realizations (illustrative; provisional ontology). Left: short-time RMS energy over time; right: spectral centroid (brightness) over time. Transposition (\texttt  {+2st}) preserves the energy shape and raises the brightness curve; the strong tempo change (\texttt  {x0.8}) preserves the shape while changing the duration. This motivates the trajectory view but is not a representation result.}}{6}{figure.1}\protected@file@percent }
+\newlabel{fig:motion}{{1}{6}{Acoustic motion descriptors for one anchor and two of its realizations (illustrative; provisional ontology). Left: short-time RMS energy over time; right: spectral centroid (brightness) over time. Transposition (\texttt {+2st}) preserves the energy shape and raises the brightness curve; the strong tempo change (\texttt {x0.8}) preserves the shape while changing the duration. This motivates the trajectory view but is not a representation result}{figure.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Aggregation.}{6}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Classification.}{6}{section*.13}\protected@file@percent }
+\citation{li2024mert}
+\citation{elizalde2023clap,wu2023laionclap}
+\citation{vaswani2017attention}
+\citation{bardes2022vicreg}
+\citation{wang2020alignment}
+\citation{schroff2015facenet}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Representations}{7}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Distances and geometry}{7}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Objectives}{7}{subsection.4.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Experiment matrix.}}{8}{table.3}\protected@file@percent }
+\newlabel{tab:experiments}{{3}{8}{Experiment matrix}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Phase~1 pipeline. Transformation semantics are fixed by humans before any representation is evaluated; editing is downstream of the preregistered criteria.}}{8}{figure.2}\protected@file@percent }
+\newlabel{fig:pipeline}{{2}{8}{Phase~1 pipeline. Transformation semantics are fixed by humans before any representation is evaluated; editing is downstream of the preregistered criteria}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Experiments}{8}{subsection.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Local editing (deferred)}{8}{subsection.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Preregistered criteria and statistical plan}{8}{section.5}\protected@file@percent }
+\newlabel{sec:criteria}{{5}{8}{Preregistered criteria and statistical plan}{section.5}{}}
+\citation{hawthorne2019maestro}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Pilot}{9}{section.6}\protected@file@percent }
+\newlabel{sec:pilot}{{6}{9}{Pilot}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Preliminary engineering validation (not evidence)}{9}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Limitations and threats to validity}{9}{section.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Latent geometry of the pilot under the provisional ontology (log-mel pooled embeddings; illustrative, not evidence). Left: pairwise distance matrix over four anchors (\texttt  {A1}--\texttt  {A4}) and their variants. Right: metric MDS of the same embeddings. Within-anchor variants form blocks and clusters, while cross-anchor distances are larger, and the two tempo settings span a wide range---consistent with the \texttt  {mixed} prior and with the need to estimate the tempo boundary from humans.}}{10}{figure.3}\protected@file@percent }
+\newlabel{fig:pilot_geometry}{{3}{10}{Latent geometry of the pilot under the provisional ontology (log-mel pooled embeddings; illustrative, not evidence). Left: pairwise distance matrix over four anchors (\texttt {A1}--\texttt {A4}) and their variants. Right: metric MDS of the same embeddings. Within-anchor variants form blocks and clusters, while cross-anchor distances are larger, and the two tempo settings span a wide range---consistent with the \texttt {mixed} prior and with the need to estimate the tempo boundary from humans}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Open-source release and reproducibility}{10}{section.9}\protected@file@percent }
+\newlabel{sec:release}{{9}{10}{Open-source release and reproducibility}{section.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Conclusion}{10}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Ontology schema}{10}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Latent shared projection (provisional)}{11}{appendix.B}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Shared 2D PCA projection of one anchor and two realizations (log-mel frames, coarse to eight time steps; illustrative). A single projection basis is fit on all frames so trajectories are comparable. The high-dimensional frame trajectory is deliberately not used as a primary figure; the geometry of representation is summarized by the RDM/MDS (Figure~\ref {fig:pilot_geometry}), while interpretable motion is shown in Figure~\ref {fig:motion}.}}{11}{figure.4}\protected@file@percent }
+\newlabel{fig:pilot_latent}{{4}{11}{Shared 2D PCA projection of one anchor and two realizations (log-mel frames, coarse to eight time steps; illustrative). A single projection basis is fit on all frames so trajectories are comparable. The high-dimensional frame trajectory is deliberately not used as a primary figure; the geometry of representation is summarized by the RDM/MDS (Figure~\ref {fig:pilot_geometry}), while interpretable motion is shown in Figure~\ref {fig:motion}}{figure.4}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{assran2023ijepa}{{1}{2023}{{Assran et~al.}}{{Assran, Duval, Misra, Bojanowski, Vincent, Rabbat, LeCun, and Ballas}}}
+\bibcite{bardes2022vicreg}{{2}{2022}{{Bardes et~al.}}{{Bardes, Ponce, and LeCun}}}
+\bibcite{bardes2024vjepa}{{3}{2024}{{Bardes et~al.}}{{Bardes, Garrido, Ponce, Chen, Rabbat, LeCun, Assran, and Ballas}}}
+\bibcite{efron1993bootstrap}{{4}{1993}{{Efron and Tibshirani}}{{}}}
+\bibcite{elizalde2023clap}{{5}{2023}{{Elizalde et~al.}}{{Elizalde, Deshmukh, Al~Ismail, and Wang}}}
+\bibcite{fleiss1971measuring}{{6}{1971}{{Fleiss}}{{}}}
+\bibcite{godoy2010gestures}{{7}{2010}{{God{\o }y and Leman}}{{}}}
+\bibcite{hawthorne2019maestro}{{8}{2019}{{Hawthorne et~al.}}{{Hawthorne, Stasyuk, Roberts, Simon, Huang, Dieleman, Elsen, Engel, and Eck}}}
+\bibcite{kriegeskorte2008rsa}{{9}{2008}{{Kriegeskorte et~al.}}{{Kriegeskorte, Mur, and Bandettini}}}
+\bibcite{krippendorff2004content}{{10}{2004}{{Krippendorff}}{{}}}
+\bibcite{li2024mert}{{11}{2024}{{Li et~al.}}{{Li, Yuan, Zhang, Ma, Chen, Yin, Xiao, Lin, Ragni, Benetos, Gyenge, Dannenberg, et~al.}}}
+\bibcite{meyer1956emotion}{{12}{1956}{{Meyer}}{{}}}
+\bibcite{niizumi2021byola}{{13}{2021}{{Niizumi et~al.}}{{Niizumi, Takeuchi, Ohishi, Harada, and Kashino}}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Reporting checklist}{12}{appendix.C}\protected@file@percent }
+\bibcite{saeed2021cola}{{14}{2021}{{Saeed et~al.}}{{Saeed, Grangier, and Zeghidour}}}
+\bibcite{sakoe1978dtw}{{15}{1978}{{Sakoe and Chiba}}{{}}}
+\bibcite{schroff2015facenet}{{16}{2015}{{Schroff et~al.}}{{Schroff, Kalenichenko, and Philbin}}}
+\bibcite{vaswani2017attention}{{17}{2017}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
+\bibcite{wang2020alignment}{{18}{2020}{{Wang and Isola}}{{}}}
+\bibcite{won2024musicfm}{{19}{2024}{{Won et~al.}}{{Won, Hung, and Le}}}
+\bibcite{wu2023clamp}{{20}{2023{a}}{{Wu et~al.}}{{Wu, Yu, Tan, and Sun}}}
+\bibcite{wu2023laionclap}{{21}{2023{b}}{{Wu et~al.}}{{Wu, Chen, Zhang, Hui, Berg-Kirkpatrick, and Dubnov}}}
+\gdef \@abspage@last{13}
