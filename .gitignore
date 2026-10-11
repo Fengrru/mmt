@@ -28,3 +28,8 @@ Thumbs.db
 datasets/*/audio_root.txt
 
 # manuscript kept private for now (local only)
+
+# LaTeX build intermediates (the compiled PDF is tracked)
+paper/*.aux
+paper/*.out
+paper/*.blg
